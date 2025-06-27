@@ -116,7 +116,7 @@ const Header = () => {
         <div 
           ref={menuRef}
           id="mobile-menu"
-          className="md:hidden bg-card border-t border-border"
+          className="md:hidden bg-card border-t border-border fixed top-16 left-0 right-0 z-[60]"
           role="menu"
           aria-labelledby="mobile-menu-button"
         >
