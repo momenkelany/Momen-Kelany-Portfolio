@@ -256,10 +256,10 @@ This project is licensed under the MIT License. See LICENSE file for details.
 ## Contact
 
 For questions or support, please contact:
-- **Email**: momen.kelany@example.com
-- **LinkedIn**: [Your LinkedIn Profile]
-- **GitHub**: [Your GitHub Profile]
+- **Email**: momenkelany1@gmail.com
+- **LinkedIn**: https://www.linkedin.com/in/momen-kelany
+- **GitHub**: https://github.com/momenkelany
 
 ---
 
-*Last updated: December 2024*
+*Last updated: June 2025*

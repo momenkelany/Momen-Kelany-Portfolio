@@ -192,14 +192,14 @@ npm run dev
 
 ### Contact
 - **Name**: Momen Kelany
-- **Email**: momen.kelany@example.com
-- **LinkedIn**: [LinkedIn Profile]
-- **GitHub**: [GitHub Profile]
+- **Email**: momenkelany1@gmail.com
+- **LinkedIn**: https://www.linkedin.com/in/momen-kelany
+- **GitHub**: https://github.com/momenkelany
 
 ### Project Status
 - **Version**: 1.0.0
 - **Status**: Production Ready ✅
-- **Last Updated**: December 2024
+- **Last Updated**: June 2025
 - **Maintenance**: Active
 
 ## 📄 License
