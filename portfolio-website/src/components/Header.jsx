@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Button } from './ui/button';
 import { Menu, X } from 'lucide-react';
-import ThemeToggle from './ThemeToggle';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -147,7 +146,6 @@ const Header = () => {
                 </a>
               ))}
               <div className="pt-2">
-                <ThemeToggle />
               </div>
             </nav>
           </div>
