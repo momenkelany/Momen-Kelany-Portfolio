@@ -30,9 +30,9 @@ const Skills = () => {
       skills: [
         { name: 'HTML', level: 90 },
         { name: 'CSS', level: 85 },
-        { name: 'JavaScript', level: 85 },
+        { name: 'JavaScript', level: 88 },
         { name: 'C++', level: 75 },
-        { name: 'SQL', level: 70 },
+        { name: 'SQL', level: 80 },
         { name: 'Object-Oriented Programming', level: 85 },
         { name: 'Data Structures & Algorithms', level: 78 }
       ]
@@ -42,11 +42,11 @@ const Skills = () => {
       icon: <Globe className="text-primary" size={24} />,
       skills: [
         { name: 'Node.js', level: 85 },
-        { name: 'Express.js', level: 85 },
+        { name: 'Express.js', level: 82 },
         { name: 'React', level: 80 },
-        { name: 'RESTful APIs', level: 80 },
+        { name: 'RESTful APIs', level: 88 },
         { name: 'Responsive Web Design', level: 90 },
-        { name: 'WordPress Development', level: 70 }
+        { name: 'WordPress Development', level: 75 }
       ]
     },
     {
@@ -54,21 +54,21 @@ const Skills = () => {
       icon: <Database className="text-primary" size={24} />,
       skills: [
         { name: 'MySQL', level: 85 },
-        { name: 'MongoDB', level: 75 },
-        { name: 'Relational Database Management', level: 80 },
-        { name: 'Database Design & Optimization', level: 80 }
+        { name: 'MongoDB', level: 80 },
+        { name: 'Relational Database Management', level: 82 },
+        { name: 'Database Design & Optimization', level: 78 }
       ]
     },
     {
       title: 'Tools & Platforms',
       icon: <Settings className="text-primary" size={24} />,
       skills: [
-        { name: 'Git (Version Control)', level: 80 },
-        { name: 'GitHub', level: 80 },
+        { name: 'Git (Version Control)', level: 85 },
+        { name: 'GitHub', level: 88 },
         { name: 'Visual Studio Code', level: 90 },
-        { name: 'Debugging Tools', level: 85 },
+        { name: 'Adobe Illustrator', level: 70 },
         { name: 'Microsoft Office Suite', level: 85 },
-        { name: 'Adobe Illustrator / Photoshop', level: 70 }
+        { name: 'Debugging Tools', level: 80 }
       ]
     }
   ];
