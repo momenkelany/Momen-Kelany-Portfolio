@@ -6,15 +6,15 @@ import path from 'path'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(),tailwindcss()],
-  base: process.env.VITE_BASE_PATH || "/Momen-Kelany-Portfolio",
-  // resolve: {
-  //   alias: {
-  //     "@": path.resolve(__dirname, "./src"),
-  //   },
-  // },
-  // server: {
-  //   host: '0.0.0.0',
-  //   port: 5173,
-  //   allowedHosts: ['*']
-  // }
+  base:"/Momen-Kelany-Portfolio",
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
+  },
+  server: {
+    host: '0.0.0.0',
+    port: 5173,
+    allowedHosts: ['*']
+  }
 })
