@@ -1,11 +1,36 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Card, CardContent } from './ui/card';
 import { MapPin, Phone, Mail, Linkedin, Github } from 'lucide-react';
 import OptimizedImage from './OptimizedImage';
 
 const About = () => {
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const fadeElements = entry.target.querySelectorAll('.fade-in');
+            fadeElements.forEach((el, index) => {
+              setTimeout(() => {
+                el.classList.add('visible');
+              }, index * 200);
+            });
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
   return (
-    <section id="about" className="section-padding bg-background">
+    <section id="about" className="section-padding bg-background" ref={sectionRef}>
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
