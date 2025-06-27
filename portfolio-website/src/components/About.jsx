@@ -65,11 +65,11 @@ const About = () => {
                   </div>
                   <div className="flex items-center space-x-3">
                     <Phone className="text-primary" size={20} />
-                    <span className="text-muted-foreground">+201152214242</span>
+                    <a  href="tel:+201152214242" className="text-muted-foreground hover:text-primary transition-colors">+201152214242</a>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Mail className="text-primary" size={20} />
-                    <span className="text-muted-foreground">momenkelany1@gmail.com</span>
+                    <a  href="mailto:momenkelany1@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">momenkelany1@gmail.com</a>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Linkedin className="text-primary" size={20} />
