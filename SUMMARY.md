@@ -125,16 +125,16 @@ npm run dev
 
 ## 🚀 Deployment
 
-### Replit Deployment (Current)
-- Hosted on Replit platform
+### Github Deployment (Current)
+- Hosted on Gihub 
 - Automatic deployment on code changes
 - Built-in SSL and custom domain support
 
 ### Build Process
-1. Development on Replit IDE
+1. Development on VS Code IDE
 2. Code changes auto-saved
-3. Deploy via Replit Deployments tab
-4. Live at Replit-provided URL
+3. Deploy via VS Code Terminal tab
+4. Live at Github-provided URL
 
 ## 📱 Browser Support
 
@@ -174,8 +174,8 @@ npm run dev
 ## 🔗 Links & Resources
 
 ### Live Website
-- **Production URL**: [Replit Deployment URL]
-- **Development**: Replit IDE environment
+- **Production URL**: https://momenkelany.github.io/Momen-Kelany-Portfolio/
+- **Development**: VS Code IDE environment
 
 ### Documentation
 - [README.md](./README.md) - Complete project documentation
@@ -192,6 +192,7 @@ npm run dev
 
 ### Contact
 - **Name**: Momen Kelany
+- **Phone**: +201152214242
 - **Email**: momenkelany1@gmail.com
 - **LinkedIn**: https://www.linkedin.com/in/momen-kelany
 - **GitHub**: https://github.com/momenkelany

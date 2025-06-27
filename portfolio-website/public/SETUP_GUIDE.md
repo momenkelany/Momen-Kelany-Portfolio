@@ -136,11 +136,6 @@ Update `index.html`:
 
 ## Deployment Options
 
-### Replit (Recommended)
-1. Push changes to your Replit project
-2. Click "Deploy" in the Deployments tab
-3. Your site will be live at your Replit URL
-
 ### Netlify
 1. Build the project: `npm run build`
 2. Upload `dist` folder to Netlify

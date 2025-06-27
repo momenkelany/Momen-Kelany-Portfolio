@@ -171,11 +171,6 @@ portfolio-website/
 
 ## Deployment
 
-### Replit Deployment
-1. Push changes to your Replit project
-2. Use the Deployments tab to publish your site
-3. Your site will be available at your Replit URL
-
 ### Manual Deployment
 1. Run `npm run build` to create production build
 2. Upload the `dist` folder to your hosting provider
@@ -256,6 +251,7 @@ This project is licensed under the MIT License. See LICENSE file for details.
 ## Contact
 
 For questions or support, please contact:
+- **Phone**: +201152214242
 - **Email**: momenkelany1@gmail.com
 - **LinkedIn**: https://www.linkedin.com/in/momen-kelany
 - **GitHub**: https://github.com/momenkelany
