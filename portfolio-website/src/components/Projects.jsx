@@ -2,9 +2,13 @@ import React, { useState } from 'react';
 import { Card, CardContent } from './ui/card';
 import { Button } from './ui/button';
 import { ExternalLink, Github, Filter } from 'lucide-react';
+import OptimizedImage from './OptimizedImage';
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('all');
+
+  // Get the base URL from import.meta.env or default to empty string
+  const baseUrl = import.meta.env.BASE_URL || '';
 
   const projects = [
     {
@@ -12,52 +16,57 @@ const Projects = () => {
       description: 'Developed a secure user authentication system with session handling and encrypted password storage. Ensured backend validation and data protection best practices.',
       technologies: ['HTML', 'CSS', 'Node.js', 'MySQL'],
       category: 'fullstack',
-      image: '/api/placeholder/400/250',
+      image: `${baseUrl}images/login-system.jpg`,
       liveUrl: '#',
-      githubUrl: '#'
+      githubUrl: '#',
+      showGithub: true
     },
     {
       title: 'Currency Converter App',
       description: 'Built a currency conversion tool using real-time API data. Designed a user-friendly interface with clear error handling.',
       technologies: ['JavaScript', 'RESTful APIs', 'RapidAPI'],
       category: 'frontend',
-      image: '/api/placeholder/400/250',
+      image: `${baseUrl}images/currency-converter.jpg`,
       liveUrl: '#',
-      githubUrl: '#'
+      githubUrl: '#',
+      showGithub: true
     },
     {
       title: 'Movie Search Website',
       description: 'Developed a search app to fetch and display movie data from external APIs. Created a responsive, dynamic interface for easy browsing.',
       technologies: ['HTML', 'CSS', 'JavaScript', 'RESTful APIs'],
       category: 'frontend',
-      image: '/api/placeholder/400/250',
+      image: `${baseUrl}images/movie-search.jpg`,
       liveUrl: 'https://www.facebook.com/',
-      githubUrl: '#'
+      githubUrl: '#',
+      showGithub: true
     },
     {
       title: 'Real-Time Chat App',
       description: 'Built a live chat application using WebSockets for multi-user messaging. Enabled room creation and instant message delivery in real time.',
       technologies: ['Node.js', 'Express.js', 'HTML', 'CSS', 'JavaScript'],
       category: 'fullstack',
-      image: '/api/placeholder/400/250',
+      image: `${baseUrl}images/chat-app.jpg`,
       liveUrl: '#',
-      githubUrl: '#'
+      githubUrl: '#',
+      showGithub: true
     },
     {
       title: 'Swimming Academy Website',
       description: 'Designed and deployed a responsive business website to showcase services, schedules, and contact information.',
       technologies: ['Bootstrap', 'JavaScript'],
       category: 'frontend',
-      image: '/api/placeholder/400/250',
+      image: `${baseUrl}images/swimming-academy.jpg`,
       liveUrl: '#',
-      githubUrl: '#'
+      githubUrl: '#',
+      showGithub: true
     },
-    {
+      {
       title: 'Online Clothing Store',
-      description: 'Launched an eCommerce website with full checkout and account functionality. Customized WordPress themes and integrated payment gateways.',
-      technologies: ['WordPress'],
+      description: 'Launched an eCommerce website with full checkout and account functionality. Customized Zammit themes and integrated payment gateways.',
+      technologies: ['Zammit'],
       category: 'cms',
-      image: '/api/placeholder/400/250',
+      image: `${baseUrl}images/Online-Clothing-Store.png`,
       liveUrl: 'https://toro-eg.com',
       githubUrl: '#'
     }
@@ -70,8 +79,8 @@ const Projects = () => {
     { id: 'cms', label: 'CMS' }
   ];
 
-  const filteredProjects = activeFilter === 'all' 
-    ? projects 
+  const filteredProjects = activeFilter === 'all'
+    ? projects
     : projects.filter(project => project.category === activeFilter);
 
   const getTechColor = (tech) => {
@@ -86,6 +95,7 @@ const Projects = () => {
       'Express.js': 'bg-gray-600',
       'Bootstrap': 'bg-purple-500',
       'WordPress': 'bg-blue-700',
+      'Zammit': 'bg-blue-700',
       'RESTful APIs': 'bg-indigo-500',
       'RapidAPI': 'bg-red-500'
     };
@@ -111,11 +121,10 @@ const Projects = () => {
               key={filter.id}
               variant={activeFilter === filter.id ? "default" : "outline"}
               onClick={() => setActiveFilter(filter.id)}
-              className={`${
-                activeFilter === filter.id 
-                  ? 'bg-primary text-primary-foreground' 
+              className={`${activeFilter === filter.id
+                  ? 'bg-primary text-primary-foreground'
                   : 'border-primary text-primary hover:bg-primary hover:text-primary-foreground'
-              }`}
+                }`}
             >
               <Filter size={16} className="mr-2" />
               {filter.label}
@@ -126,24 +135,23 @@ const Projects = () => {
         {/* Projects Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProjects.map((project, index) => (
-            <Card key={index} className="bg-card border-border card-hover overflow-hidden">
+            <Card key={index} className="bg-card border-border card-hover overflow-hidden flex flex-col">
               <div className="relative">
-                <div className="w-full h-48 bg-muted flex items-center justify-center">
-                  <div className="text-muted-foreground text-center">
-                    <div className="w-16 h-16 bg-primary/20 rounded-lg flex items-center justify-center mx-auto mb-2">
-                      <ExternalLink className="text-primary" size={24} />
-                    </div>
-                    <p className="text-sm">Project Preview</p>
-                  </div>
-                </div>
+                <OptimizedImage
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-48 object-cover"
+                  width="100%"
+                  height="192px"
+                />
               </div>
-              
-              <CardContent className="p-6">
+
+              <CardContent className="p-6 flex flex-col flex-1">
                 <h3 className="text-xl font-semibold mb-3 text-foreground">{project.title}</h3>
-                <p className="text-muted-foreground mb-4 text-sm leading-relaxed">
+                <p className="text-muted-foreground mb-4 text-sm leading-relaxed h-24 overflow-y-auto">
                   {project.description}
                 </p>
-                
+
                 {/* Technology Tags */}
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.technologies.map((tech, techIndex) => (
@@ -155,26 +163,29 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
-                
+
                 {/* Action Buttons */}
-                <div className="flex gap-3">
-                  <Button 
-                    size="sm" 
-                    className="flex-1 bg-primary hover:bg-primary/90"
+                <div className="flex gap-3 mt-auto">
+                  <Button
+                    size="sm"
+                    className={`bg-primary hover:bg-primary/90 ${!project.showGithub ? 'w-full' : 'flex-1'}`}
                     onClick={() => window.open(project.liveUrl, '_blank')}
                   >
                     <ExternalLink size={16} className="mr-2" />
                     Live Demo
                   </Button>
-                  <Button 
-                    size="sm" 
-                    variant="outline" 
-                    className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-                    onClick={() => window.open(project.githubUrl, '_blank')}
-                  >
-                    <Github size={16} className="mr-2" />
-                    Code
-                  </Button>
+
+                  {project.showGithub && (
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+                      onClick={() => window.open(project.githubUrl, '_blank')}
+                    >
+                      <Github size={16} className="mr-2" />
+                      Code
+                    </Button>
+                  )}
                 </div>
               </CardContent>
             </Card>
@@ -192,4 +203,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
