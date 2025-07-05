@@ -5,7 +5,7 @@ import path from 'path'
 
 // https://vite.dev/config/
 export default defineConfig({
-   base: '/Momen-Kelany-Portfolio/',
+   base: '/Momen-Kelany-Portfolio/',  // Commented out to fix image paths
   plugins: [react(),tailwindcss()],
   resolve: {
     alias: {

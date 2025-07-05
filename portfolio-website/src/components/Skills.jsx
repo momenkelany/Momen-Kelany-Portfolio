@@ -133,19 +133,6 @@ const Skills = () => {
               <h3 className="text-2xl font-semibold mb-6 text-center gradient-text">Languages</h3>
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="text-center">
-                  <h4 className="text-xl font-medium text-foreground mb-2">English</h4>
-                  <p className="text-muted-foreground">Fluent</p>
-                  <div className="w-full bg-muted rounded-full h-2 mt-2">
-                    <div 
-                      className="skill-bar rounded-full h-2"
-                      style={{ 
-                        width: isVisible ? '95%' : '0%',
-                        transition: 'width 1.5s ease-in-out'
-                      }}
-                    ></div>
-                  </div>
-                </div>
-                <div className="text-center">
                   <h4 className="text-xl font-medium text-foreground mb-2">Arabic</h4>
                   <p className="text-muted-foreground">Mother Tongue</p>
                   <div className="w-full bg-muted rounded-full h-2 mt-2">
@@ -153,6 +140,19 @@ const Skills = () => {
                       className="skill-bar rounded-full h-2"
                       style={{ 
                         width: isVisible ? '100%' : '0%',
+                        transition: 'width 1.5s ease-in-out'
+                      }}
+                    ></div>
+                  </div>
+                </div>
+                <div className="text-center">
+                  <h4 className="text-xl font-medium text-foreground mb-2">English</h4>
+                  <p className="text-muted-foreground">Fluent - B2</p>
+                  <div className="w-full bg-muted rounded-full h-2 mt-2">
+                    <div 
+                      className="skill-bar rounded-full h-2"
+                      style={{ 
+                        width: isVisible ? '90%' : '0%',
                         transition: 'width 1.5s ease-in-out'
                       }}
                     ></div>

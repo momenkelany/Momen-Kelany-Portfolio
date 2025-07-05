@@ -30,7 +30,7 @@ const Experience = () => {
         'Graduated with a GPA of 3.41 from the Faculty of Computer Science and Information Systems',
         'Completed coursework in data structures, algorithms, databases, and object-oriented programming'
       ],
-      grade: 'GPA: 3.41'
+      grade: 'GPA: 3.41 (Excellent)'
     }
   ];
 
