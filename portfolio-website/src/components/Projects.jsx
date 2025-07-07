@@ -23,19 +23,19 @@ const Projects = () => {
       description: 'Built a currency conversion tool using real-time API data. Designed a user-friendly interface with clear error handling.',
       technologies: ['JavaScript', 'RESTful APIs', 'RapidAPI'],
       category: 'frontend',
-      image: null,
+      image: null,      // No image for this project, will show placeholder
       liveUrl: '#',
-      githubUrl: '#',
-      isReady: true
+      githubUrl: null,
+      isReady: false
     },
     {
-      title: 'Movie Search Website',
-      description: 'Developed a search app to fetch and display movie data from external APIs. Created a responsive, dynamic interface for easy browsing.',
-      technologies: ['HTML', 'CSS', 'JavaScript', 'RESTful APIs'],
+      title: 'TV Search Website',
+      description: 'This is a simple and responsive web app that lets users search for TV shows using the TVMaze API. When a user types a show’s name, the app displays related shows with images. Clicking an image takes you to the show’s page.',
+      technologies: ['HTML', 'CSS', 'JavaScript', 'Axios' , 'RESTful APIs'],
       category: 'frontend',
-      image: null,
-      liveUrl: '#',
-      githubUrl: '#',
+      image: '/Momen-Kelany-Portfolio/images/projects/TV-Show-Search.png',
+      liveUrl: 'https://momenkelany.github.io/TV-Show-Search/',
+      githubUrl: 'https://github.com/momenkelany/TV-Show-Search',
       isReady: true
     },
     {
@@ -49,14 +49,14 @@ const Projects = () => {
       isReady: true
     },
     {
-      title: 'Swimming Academy Website',
+      title: 'Real Estate Website',
       description: 'Designed and deployed a responsive business website to showcase services, schedules, and contact information.',
       technologies: ['Bootstrap', 'JavaScript'],
       category: 'frontend',
-      image: null,
+      image: null,      // No image for this project, will show placeholder
       liveUrl: '#',
-      githubUrl: '#',
-      isReady: true
+      githubUrl: null,
+      isReady: false
     },
     {
       title: 'Online Clothing Store',
@@ -179,7 +179,7 @@ const Projects = () => {
                     disabled={!project.isReady} // Disable button if not ready
                   >
                     <ExternalLink size={16} className="mr-2" />
-                    {project.isReady ? 'Live Demo' : 'Coming Soon'} {/* Conditional text */}
+                    {project.isReady ? 'Live Demo' : 'Deploying Soon'} {/* Conditional text */}
                   </Button>
                   {project.githubUrl && (
                     <Button
