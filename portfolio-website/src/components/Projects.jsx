@@ -14,7 +14,7 @@ const Projects = () => {
       category: 'fullstack',
       image: null,      // No image for this project, will show placeholder
       liveUrl: '#',
-      githubUrl: '#',
+      githubUrl: null,
       isReady: false
 
     },
@@ -34,18 +34,18 @@ const Projects = () => {
       technologies: ['HTML', 'CSS', 'JavaScript', 'RESTful APIs'],
       category: 'frontend',
       image: null,
-      liveUrl: 'https://www.facebook.com/',
+      liveUrl: '#',
       githubUrl: '#',
       isReady: true
     },
     {
-      title: 'Real-Time Chat App',
-      description: 'Built a live chat application using WebSockets for multi-user messaging. Enabled room creation and instant message delivery in real time.',
-      technologies: ['Node.js', 'Express.js', 'HTML', 'CSS', 'JavaScript'],
+      title: 'Weather App',
+      description: 'Built a Weather Forecasting Web Application that provides real-time weather data, a 5-day forecast, and search history tracking for users worldwide. the app fetches weather data via the OpenWeatherMap API and stores search history using MongoDB.',
+      technologies: ['React', 'Node.js', 'Express.js', 'MongoDB','RESTful APIs' ,'fly.io'],
       category: 'fullstack',
-      image: null,
-      liveUrl: '#',
-      githubUrl: '#',
+      image: '/Momen-Kelany-Portfolio/images/projects/Weather-App.png',
+      liveUrl: 'https://momenkelany.github.io/weather-app/',
+      githubUrl: 'https://github.com/momenkelany/weather-app',
       isReady: true
     },
     {
