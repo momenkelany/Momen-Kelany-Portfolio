@@ -1,0 +1,14 @@
+# Ignore environment files
+.env
+
+# Ignore node modules
+portfolio-website/node_modules/
+
+# Ignore build output
+portfolio-website/dist/
+portfolio-website/build/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
