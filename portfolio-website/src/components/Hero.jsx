@@ -5,7 +5,7 @@ import { ChevronDown, Download, Github, Linkedin, Mail, Phone } from 'lucide-rea
 const Hero = () => {
   const [displayText, setDisplayText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
-  const fullText = 'Junior Full Stack Developer';
+  const fullText = 'Software Engineer';
 
   useEffect(() => {
     if (currentIndex < fullText.length) {

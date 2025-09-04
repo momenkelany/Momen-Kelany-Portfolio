@@ -33,8 +33,8 @@ const Skills = () => {
         { name: 'JavaScript', level: 85 },
         { name: 'C++', level: 75 },
         { name: 'SQL', level: 70 },
-        { name: 'Object-Oriented Programming', level: 85 },
-        { name: 'Data Structures & Algorithms', level: 78 }
+        { name: 'Object-Oriented Programming (OOP)', level: 85 },
+        { name: 'Data Structures & Algorithms', level: 80 }
       ]
     },
     {
@@ -43,7 +43,7 @@ const Skills = () => {
       skills: [
         { name: 'Node.js', level: 85 },
         { name: 'Express.js', level: 85 },
-        { name: 'React', level: 80 },
+        { name: 'React', level: 70 },
         { name: 'RESTful APIs', level: 80 },
         { name: 'Responsive Web Design', level: 90 },
         { name: 'WordPress Development', level: 70 }
@@ -53,8 +53,8 @@ const Skills = () => {
       title: 'Database Technologies',
       icon: <Database className="text-primary" size={24} />,
       skills: [
-        { name: 'MySQL', level: 85 },
-        { name: 'MongoDB', level: 75 },
+        { name: 'MongoDB', level: 85 },
+        { name: 'MySQL', level: 75 },
         { name: 'Relational Database Management', level: 80 },
         { name: 'Database Design & Optimization', level: 80 }
       ]

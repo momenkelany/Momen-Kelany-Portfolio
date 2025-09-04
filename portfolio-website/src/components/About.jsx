@@ -48,9 +48,7 @@ const About = () => {
               <CardContent className="p-8">
                 <h3 className="text-2xl font-semibold mb-6 gradient-text">Professional Summary</h3>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  Junior Full Stack Developer with hands-on experience in HTML, CSS, JavaScript, Node.js, 
-                  Express.js, and MongoDB. Proven ability to build responsive, scalable web applications 
-                  and implement secure, maintainable code.
+                 Full-Stack Developer skilled in building responsive, scalable web apps with React.js, Node.js, Express.js, and MongoDB. Strong in RESTful APIs, MVC, Git, OOP, and clean code. Passionate about problem-solving and continuous growth.
                 </p>
                 <p className="text-muted-foreground leading-relaxed mb-6">
                   Solid foundation in computer science principles including object-oriented programming, 
