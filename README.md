@@ -46,6 +46,10 @@ npm run build
 npm run preview
 ```
 
+### Deployment
+```bash
+npm run deploy
+```
 ## Project Structure
 
 ```
