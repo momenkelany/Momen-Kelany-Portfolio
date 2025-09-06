@@ -72,7 +72,7 @@ const Experience = () => {
     {
       type: 'certification',
       title: 'CIB Summer Internship Program - “The Green Leap”',
-      certificationLink: "https://apiv2.ciboat.com/storage/certificates/12898/modified_1757000123.pdf",
+      certificationLink: "https://apiv2.ciboat.com/storage/certificates/12898/modified_1757087075.pdf",
       institution: 'CIB Egypt',
       institutionLink: 'https://www.cibeg.com',
       period: '08/2025',
